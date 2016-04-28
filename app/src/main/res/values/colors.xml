@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="news_base_color">#990000</color>
+    <color name="white">#ffffff</color>
+    <color name="user_card_view_border">#ffc9c9c9</color>
+    <color name="list_divider">#272727</color>
+    <color name="nav_drawer_group_grey">#ff3c3c32</color>
+    <color name="date_color">#acacac</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#55000000</color>
+    <color name="header_grey">#c1c1c1</color>
+    <color name="alternative_header">#f5f5f5</color>
+    <color name="grey">#bdbdbd</color>
+    <color name="grey_new">#616161</color>
+    <color name="color_news">#eb2227</color>
+    <color name="color_bola">#3A9601</color>
+    <color name="color_life">#e32e6a</color>
+    <color name="color_forum">#0087c9</color>
+    <color name="color_auto">#231f20</color>
+    <color name="color_log">#a9328c</color>
+    <color name="purple_plum">#913D88</color>
+    <color name="red_thunder">#EF4836</color>
+    <color name="green">#26A65B</color>
+    <color name="blue">#3498DB</color>
+    <color name="lynch">#6C7A89</color>
+    <color name="light_white">#DCDCDC</color>
+
+    <color name="header">#58585a</color>
+    <color name="header_bg">#d1d2d4</color>
+
+    <color name="menu_profile_bg">#c2b59b</color>
+    <color name="menu_item">#ffffff</color>
+    <color name="menu_item_bg">#58585a</color>
+    <color name="menu_item_pressed_bg">#4e4e50</color>
+
+    <color name="sub_channel">#ffffff</color>
+    <color name="sub_channel_bg">#44000000</color>
+    <color name="sub_channel_bg_press">#88000000</color>
+
+    <color name="item_bg">@android:color/transparent</color>
+    <color name="item_bg_press">#88000000</color>
+
+</resources>

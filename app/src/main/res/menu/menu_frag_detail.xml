@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_share"
+        android:showAsAction="ifRoom"
+        app:showAsAction="ifRoom"
+    	android:title="Share"
+    	app:actionProviderClass="android.support.v7.widget.ShareActionProvider" />
+    <item android:id="@+id/action_settings"
+        android:showAsAction="ifRoom"
+        app:showAsAction="ifRoom"
+        android:title="Settings"
+        android:icon="@drawable/ic_action_overflow">
+        <menu>
+            <item android:id="@+id/subaction_favorites"
+                android:icon="@drawable/icon_favorites"
+                android:title="Favorit"/>
+            <item android:id="@+id/subaction_comments"
+                android:icon="@drawable/ic_action_comment"
+                android:title="Komentar"/>
+            <item android:id="@+id/subaction_rate"
+                android:icon="@drawable/ic_action_rate"
+                android:title="Rating"/>
+            <item android:id="@+id/subaction_browser"
+                android:icon="@drawable/ic_action_browse"
+                android:title="Browser"/>
+        </menu>
+    </item>
+</menu>

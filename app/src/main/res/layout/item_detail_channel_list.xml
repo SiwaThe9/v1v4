@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:ripple="http://schemas.android.com/apk/res-auto"
+        xmlns:wheel="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <id.co.viva.news.app.component.RobotoBoldTextView
+            android:id="@+id/text_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!-- Small Card -->
+        <id.co.viva.news.app.component.LoadMoreListView
+            android:id="@+id/list_channel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/text_channel"
+            android:choiceMode="singleChoice"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:padding="2dp" />
+        <!-- Big Card -->
+        <id.co.viva.news.app.component.LoadMoreListView xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/list_detail_channel_big_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/text_channel"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fitsSystemWindows="true"
+            android:padding="2dp"
+            android:scrollbarStyle="outsideOverlay"
+            tools:ignore="overdraw" />
+
+        <id.co.viva.news.app.component.RobotoTextView
+            android:id="@+id/text_no_result_detail_channel_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/label_no_results"
+            android:textColor="@color/header_grey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <id.co.viva.news.app.component.ProgressWheel
+            android:id="@+id/progress_wheel"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            wheel:progressIndeterminate="true" />
+
+        <com.andexert.library.RippleView
+            android:id="@+id/layout_ripple_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            ripple:rv_centered="true"
+            ripple:rv_color="@color/transparent">
+
+            <Button
+                android:id="@+id/btn_retry_channel_list"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="Retry"
+                android:textColor="@color/white" />
+        </com.andexert.library.RippleView>
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/cm_arrow_up"
+            fab:fab_colorPressed="@color/grey" />
+    </RelativeLayout>
+</LinearLayout>

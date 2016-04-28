@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="2dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/default_image"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image_item_search_result"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <id.co.viva.news.app.component.RobotoTextView
+                android:id="@+id/title_item_search_result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:paddingBottom="2dp"
+                android:paddingTop="6dip"
+                android:textColor="@color/nav_drawer_group_grey"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <id.co.viva.news.app.component.RobotoTextView
+                android:id="@+id/date_item_search_result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="7dp"
+                android:text="@android:string/unknownName"
+                android:textColor="@color/date_color"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/subkanal_item_search_result_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="7dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp">
+
+                <id.co.viva.news.app.component.RobotoTextView
+                    android:id="@+id/subkanal_item_search_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@android:string/untitled"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

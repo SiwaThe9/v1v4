@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Viva</string>
+    <string name="app_title_empty"></string>
+    <string name="title_failed_get_location">Gagal mendapatkan berita di sekitar anda!</string>
+    <string name="title_no_connection_and_no_gps">Periksa kembali koneksi anda dan aktifkan GPS.</string>
+    <string name="title_validate_rate">Anda belum melakukan rate artikel!</string>
+    <string name="title_no_connection">Terjadi kesalahan pada koneksi anda!</string>
+    <string name="search_hint">Pencarian</string>
+    <string name="label_process_get_image_tutorial">Memproses gambar...</string>
+    <string name="label_fail_get_image_tutorial">Gagal memproses gambar!</string>
+    <string name="label_no_results">Tidak ada hasil.</string>
+    <string name="label_no_results_favorite">Daftar favorit kosong.</string>
+    <string name="label_related_article">Artikel Terkait</string>
+    <string name="label_pencarian">Pencarian</string>
+    <string name="label_berita_sekitar_detail">Berita Sekitar</string>
+    <string name="label_berita_sekitar">BERITA SEKITAR</string>
+    <string name="label_content_not_update">Gagal memperbaharui konten.</string>
+    <string name="label_error">Terjadi Kesalahan!</string>
+    <string name="label_loading_data">Memuat data...</string>
+    <string name="label_get_location">Mencari lokasi anda...</string>
+    <string name="label_button_skip_tutorial">Skip</string>
+    <string name="label_image_profile">Profile Photo</string>
+    <string name="label_reference_article">Referensi Artikel</string>
+    <string name="label_image_profile_desc">Tap untuk melihat detail foto.</string>
+    <string name="label_favorites">BERITA FAVORIT</string>
+    <string name="label_favorites_lowercase">Berita Favorit</string>
+    <string name="label_login_with">LOGIN WITH</string>
+    <string name="label_swipe_undo">Batal Menghapus</string>
+    <string name="label_swipe_delete">Geser Untuk Menghapus</string>
+    <string name="label_validation_email">Email yang anda masukkan salah!</string>
+    <string name="label_validation_password_length">Password anda harus lebih dari 6 karakter!</string>
+    <string name="label_validation_password_length_retype">Password anda tidak cocok!</string>
+    <string name="label_validation_both">Kombinasi email dan password anda salah!</string>
+    <string name="label_validation_success_login">Login Berhasil!</string>
+    <string name="label_validation_success_register">Registrasi Berhasil!</string>
+    <string name="label_validation_failed_register">Registrasi Gagal!</string>
+    <string name="label_registration">FORM REGISTRASI</string>
+    <string name="label_validation_failed_login">Anda belum terdaftar! Silahkan melakukan registrasi.</string>
+    <string name="label_successful_gplus_connected">Berhasil terkoneksi dengan Google Plus!</string>
+    <string name="label_empty_sub_channel">Sub channel kosong!</string>
+    <string name="label_empty_list">Data kosong!</string>
+    <string name="label_error_json">Data format error!\nCobalah beberapa saat lagi.</string>
+    <string name="label_pull_down_to_refresh">Tarik ke bawah untuk memuat ulang!</string>
+    <string name="label_tap_to_refresh">Tap di sini untuk memuat ulang!</string>
+    <string name="label_load_more">LOAD MORE</string>
+    <string name="label_terbaru">TERBARU</string>
+    <string name="label_news_photo">FOTO BERITA</string>
+    <string name="label_other_photo">FOTO LAINNYA</string>
+    <string name="label_other_video">VIDEO LAINNYA</string>
+    <string name="label_setting">PENGATURAN</string>
+    <string name="label_info">Info</string>
+    <string name="label_about_us">Tentang Kami</string>
+    <string name="label_rate">Beri Peringkat</string>
+    <string name="label_contact_us">Kontak Kami</string>
+
+    <!-- Google Settings -->
+    <string name="url_google_play">market://details?id=</string>
+    <string name="gcm_sender_id">1053641403193</string>
+
+    <string name="facebook_app_id">331105887084412</string>
+    <string name="public_api_key_google">AIzaSyBq5FW1T561DfYKpolGaltd4S6rQrj-KrY</string>
+
+    <string name="label_gender_male">Laki-laki</string>
+    <string name="label_gender_female">Perempuan</string>
+
+    <string name="label_failed_get_province">Gagal mendapatkan data provinsi!</string>
+    <string name="label_failed_get_city">Gagal mendapatkan data kota!</string>
+
+    <string name="label_failed_found_store">Unable to find market app!</string>
+
+    <string name="label_title_gps">Aktifkan GPS anda untuk mendapatkan lokasi?</string>
+    <string name="label_option_yes">Ya</string>
+    <string name="label_option_no">Tidak</string>
+
+    <string name="label_registrasi_username">Username</string>
+    <string name="label_registrasi_password">Password</string>
+    <string name="label_registrasi_email">Email</string>
+    <string name="label_registrasi_password_retype">ReType Password</string>
+    <string name="label_registrasi_country">Negara</string>
+    <string name="label_registrasi_default_country">Indonesia</string>
+    <string name="label_registrasi_province">Provinsi</string>
+    <string name="label_registrasi_city">Kota</string>
+    <string name="label_registrasi_gender">Jenis Kelamin</string>
+    <string name="label_registrasi_birthdate">Tanggal Lahir</string>
+    <string name="label_registrasi_phone">Telepon</string>
+    <string name="label_registrasi_username_character_length">Username anda harus lebih dari 6 karakter!</string>
+    <string name="label_registrasi_address_character_length">Alamat anda harus lebih dari 6 karakter!</string>
+    <string name="label_registrasi_birt_validation">Silahkan pilih tanggal lahir anda!</string>
+    <string name="label_registrasi_phone_validation">Nomor telepon anda harus lebih dari 6 karakter!</string>
+    <string name="label_registrasi_city_validation">Kota domisili anda belum terisi dengan benar!</string>
+
+    <!-- Favorite Label -->
+    <string name="label_favorite_ok">OK</string>
+    <string name="label_favorite_navigation_title">Tambahkan ke daftar favorite?</string>
+    <string name="label_favorite_navigation_title_confirm">Berhasil!</string>
+    <string name="label_favorite_navigation_content">Artikel telah berhasil ditambahkan.</string>
+
+    <string name="label_item_navigation_scan_berita">Scan QR Code</string>
+    <string name="label_item_navigation_news">Berita</string>
+    <string name="label_item_navigation_otomotif">Otomotif</string>
+    <string name="label_item_navigation_bola">Bola</string>
+    <string name="label_item_navigation_life">Life</string>
+    <string name="label_loading">Loading...</string>
+
+    <string name="label_amount_rating">Jumlah Rating</string>
+    <string name="label_hint_email">Email</string>
+    <string name="label_hint_password">Password</string>
+    <string name="label_login">Login</string>
+    <string name="label_camera_scan">Kamera</string>
+    <string name="label_register">Register</string>
+    <string name="label_forgot_password_caps">FORGOT PASSWORD</string>
+    <string name="label_forgot_password"><u>Forgot Password</u></string>
+    <string name="label_please_input_email">Masukkan Email Anda :</string>
+    <string name="label_save_data_profile">Simpan</string>
+    <string name="label_hint_picker_date">Tap untuk memilih tanggal</string>
+    <string name="label_failed_save_data_profile">Gagal menyimpan data!</string>
+    <string name="label_success_save_data_profile">Data Tersimpan!</string>
+    <string name="label_logout">Logout</string>
+    <string name="label_logout_failed">Gagal Logout!</string>
+    <string name="label_logout_complete">Berhasil Logout!</string>
+    <string name="label_amount_comments">KOMENTAR</string>
+    <string name="label_comments_from_detail">Komentar</string>
+    <string name="label_please_wait">Harap tunggu...</string>
+    <string name="label_hint_comment">Komentar Anda</string>
+    <string name="label_validation_for_comment">Anda harus login terlebih dahulu!</string>
+    <string name="label_validation_for_comment_length">Komentar anda kosong!</string>
+    <string name="label_error_post_comment">Terjadi kesalahan!</string>
+    <string name="label_send_email">Kirim</string>
+    <string name="label_video_click"><u>Klik untuk melihat video.</u></string>
+    <string name="label_success_send_email">Email telah berhasil dikirim. Silahkan cek email anda untuk melihat password.</string>
+    <string name="label_not_logged_in">Anda Belum Login</string>
+
+    <!-- Camera Configuration -->
+    <string name="flash_on">Flash [ON]</string>
+    <string name="flash_off">Flash [OFF]</string>
+    <string name="auto_focus_on">Auto Focus [ON]</string>
+    <string name="auto_focus_off">Auto Focus [OFF]</string>
+
+    <string name="title_copyright">Copyright © 2008 - [YEAR] PT. Viva Media Baru</string>
+    <string name="wording_about_indo">Aplikasi mobile VIVA.co.id ini dirancang khusus untuk Android ​agar pengguna dapat menikmati beragam konten bermutu dari VIVA.co.id dengan kemudahan navigasi dan kekayaan fitur Android. Konten dalam bentuk teks, foto dan video diperbarui terus-menerus dan disajikan secara kreatif sehingga memperkaya pengalaman pengguna.</string>
+
+</resources>

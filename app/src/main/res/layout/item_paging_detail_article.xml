@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <id.co.viva.news.app.component.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/item_text_detail_article_paging"
+        android:lineSpacingExtra="6dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+</RelativeLayout>

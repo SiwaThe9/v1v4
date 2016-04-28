@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <FrameLayout
+        android:id="@+id/pager_frame"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/button_skip_tutorial"
+        android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tutorial_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/circle_indicator"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="@null"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+    <Button
+        android:id="@+id/button_skip_tutorial"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="@color/red"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:text="@string/label_button_skip_tutorial"/>
+</RelativeLayout>

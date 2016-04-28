@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.co.viva.news.app"
+    android:installLocation="preferExternal">
+
+    <!-- All Permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+
+    <!-- GCM Config -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="id.co.viva.news.app.permission.C2D_MESSAGE" />
+    <permission android:name="id.co.viva.news.app.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="android.support.multidex.MultiDexApplication">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity
+            android:name=".activity.ActSplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Facebook Login -->
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <!-- Include the AdActivity configChanges and theme -->
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <activity
+            android:name=".activity.ActNotification"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".activity.ActScanner"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeTransparent">
+        </activity>
+
+        <activity android:name=".activity.ActFromUrl"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <!-- Catch URL -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="m.news.viva.co.id" />
+                <data android:scheme="http" android:host="m.bola.viva.co.id" />
+                <data android:scheme="http" android:host="m.life.viva.co.id" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.ActLanding"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppThemeNoActionBar"/>
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="id.co.viva.news.app.activity.ActSearchResult" />
+
+        <activity
+            android:name=".activity.ActTutorial"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.ActDetailBeritaSekitar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActRating"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActVideo"
+            android:screenOrientation="portrait"
+            android:theme="@style/YouTubeTheme"/>
+
+        <activity
+            android:name=".activity.ActBrowser"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActForgotPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActDetailPhotoThumb"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActPath"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActUserProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActRegistration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActComment"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActDetailFavorite"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActDetailContentDefault"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActDetailContent"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActDetailMain"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".activity.ActDetailChannel"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="id.co.viva.news.app.activity.ActSearchResult" />
+        </activity>
+
+        <activity
+            android:name=".activity.ActTagPopularResult"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="id.co.viva.news.app.activity.ActSearchResultt" />
+        </activity>
+
+        <activity
+            android:name=".activity.ActSearchResult"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".activity.ActLanding"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <activity
+            android:name=".activity.ActivitySubChannel2List"
+            android:theme="@style/AppBaseTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".activity.ActivitySubChannel3List"
+            android:theme="@style/AppBaseTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".activity.ActivityPhotoList"
+            android:theme="@style/AppBaseTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".activity.ActivityPhotoDetail"
+            android:theme="@style/AppBaseTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".activity.ActivityVideoList"
+            android:theme="@style/AppBaseTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".activity.ActivityVideoDetail"
+            android:theme="@style/AppBaseTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".activity.ActivitySetting"
+            android:theme="@style/AppBaseTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.ActivityAboutUs"
+            android:theme="@style/AppBaseTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.ActivityWebContent"
+            android:theme="@style/AppBaseTheme"
+            android:screenOrientation="portrait"/>
+
+        <!-- Register our service -->
+        <!--
+        <receiver
+            android:name=".notification.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="id.co.viva.news.app" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- Our service -->
+        <!--
+        <service android:name=".notification.GcmIntentService" />
+        -->
+
+        <!-- New GCM Implementation -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="id.co.viva.news.app" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="id.co.viva.news.app.services.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="id.co.viva.news.app.services.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="id.co.viva.news.app.services.RegistrationIntentService"
+            android:exported="false">
+        </service>
+
+        <!-- Optionally, register AnalyticsReceiver and AnalyticsService to support background
+          dispatching on non-Google Play devices -->
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <!-- Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+             installation campaign reporting -->
+        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+    </application>
+
+</manifest>

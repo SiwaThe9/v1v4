@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <WebView
+        android:id="@+id/web_view_from_link"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <id.co.viva.news.app.component.ProgressWheel
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        wheel:progressIndeterminate="true"
+        android:id="@+id/progress_wheel"/>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/header_item_list_comment"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <id.co.viva.news.app.component.RobotoTextView
+            android:id="@+id/name_item_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:text="@string/abc_action_bar_up_description"
+            android:maxLines="3"
+            android:paddingTop="6dip"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/nav_drawer_group_grey"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <id.co.viva.news.app.component.RobotoTextView
+            android:id="@+id/date_item_comment"
+            android:layout_below="@id/name_item_comment"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:text="@android:string/unknownName"
+            android:layout_height="wrap_content"
+            android:textColor="@color/date_color"/>
+    </RelativeLayout>
+    <id.co.viva.news.app.component.RobotoTextView
+        android:id="@+id/content_item_comment"
+        android:layout_below="@id/header_item_list_comment"
+        android:layout_width="fill_parent"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:maxLines="5"
+        android:text="@android:string/unknownName"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lynch"/>
+</RelativeLayout>
